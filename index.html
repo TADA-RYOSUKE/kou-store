@@ -150,19 +150,22 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 px-6 border-t border-white/5 text-center text-xs text-gray-500 space-y-4">
-        <div class="flex justify-center space-x-6 text-gray-400">
-            <a href="#legal" class="hover:text-amber-400 transition">Legal Notice</a>
+<!-- Footer (All Aligned Right) -->
+    <footer class="py-12 px-6 border-t border-white/5 text-right text-xs text-gray-500 space-y-4 max-w-7xl mx-auto">
+        <div class="flex justify-end space-x-6 text-gray-400">
+            <button onclick="toggleLegal()" class="hover:text-amber-400 transition flex items-center gap-1 focus:outline-none">
+                <span>Legal Notice</span>
+                <span id="legal-arrow" class="text-[10px] transition-transform duration-300">▼</span>
+            </button>
             <a href="#privacy" class="hover:text-amber-400 transition">Privacy Policy</a>
             <a href="#terms" class="hover:text-amber-400 transition">Terms of Service</a>
         </div>
         <p>&copy; 2026 KOU Incense. All rights reserved. Craftsmanship from Awaji Island, Japan.</p>
     </footer>
 
-    <!-- Legal Notice Section (Fully English & Privacy Protected) -->
-    <section id="legal" class="py-12 px-6 bg-[#0B0D10] border-t border-white/5 text-xs text-gray-400 max-w-4xl mx-auto rounded-xl my-8">
-        <h4 class="text-sm font-semibold text-white mb-4 font-serif-custom">Legal Notice</h4>
+    <!-- Legal Notice Accordion Section (Right Aligned Container) -->
+    <section id="legal" class="hidden transition-all duration-500 ease-in-out py-8 px-6 bg-[#0B0D10] border border-white/10 text-xs text-gray-400 max-w-4xl ml-auto mr-0 rounded-xl mb-12">
+        <h4 class="text-sm font-semibold text-white mb-4 font-serif-custom border-b border-white/10 pb-2 text-right">Legal Notice</h4>
         <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
             <div><dt class="text-gray-500">Legal Entity:</dt><dd class="text-gray-300">KOU Incense Inc.</dd></div>
             <div><dt class="text-gray-500">Representative:</dt><dd class="text-gray-300">Representative Director</dd></div>
@@ -171,13 +174,28 @@
             <div><dt class="text-gray-500">Pricing:</dt><dd class="text-gray-300">Displayed on each product page ($42 - $105 USD)</dd></div>
             <div><dt class="text-gray-500">Shipping Policy:</dt><dd class="text-gray-300">Free International Express Shipping on orders over $80</dd></div>
             <div><dt class="text-gray-500">Payment Methods:</dt><dd class="text-gray-300">Credit Cards (Processed securely via Stripe)</dd></div>
-            <div><dt class="text-gray-500">Delivery Time:</dt><dd class="text-gray-300">Shipped within 2-3 business days after order confirmation</dd></div>
+            <div><dt class="text-gray-500">Delivery / Processing Time:</dt><dd class="text-gray-300">Shipped within 7-12 business days after payment confirmation</dd></div>
         </dl>
     </section>
 
     <script>
+        // Toggle Legal Notice Accordion
+        function toggleLegal() {
+            const legalSection = document.getElementById('legal');
+            const arrow = document.getElementById('legal-arrow');
+            
+            if (legalSection.classList.contains('hidden')) {
+                legalSection.classList.remove('hidden');
+                arrow.style.transform = 'rotate(180deg)';
+                legalSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                legalSection.classList.add('hidden');
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Stripe Checkout Function
         function checkout(itemId) {
-            // Stripe Payment Links mapping
             const stripeUrls = {
                 'zen-trio': 'YOUR_STRIPE_URL_ZEN',
                 'cleanse-trio': 'YOUR_STRIPE_URL_CLEANSE',
