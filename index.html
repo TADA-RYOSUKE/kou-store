@@ -22,6 +22,7 @@
             <nav class="hidden md:flex space-x-8 text-sm tracking-wider text-gray-400">
                 <a href="#about" class="hover:text-amber-400 transition">HERITAGE</a>
                 <a href="#bundles" class="hover:text-amber-400 transition">TRIO BUNDLES</a>
+                <a href="#about-scents" class="hover:text-amber-400 transition">FRAGRANCES</a>
                 <a href="#singles" class="hover:text-amber-400 transition">SINGLE SKUS</a>
             </nav>
             <a href="#bundles" class="bg-gold-button text-black font-semibold px-5 py-2.5 rounded-full text-xs tracking-widest hover:opacity-90 transition transform hover:scale-105">SHOP BUNDLES</a>
@@ -138,19 +139,144 @@
         </div>
     </section>
 
-    <!-- Single Box Option -->
-    <section id="singles" class="py-16 px-6 bg-[#0F1115]">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-xl font-serif-custom text-white mb-4">Prefer a Single Fragrance?</h3>
-            <p class="text-gray-400 text-sm mb-8">Select any single box (50 Sticks) for $42. Standard shipping calculated at checkout.</p>
-            <div class="inline-flex items-center gap-6 bg-[#14171D] p-4 rounded-xl border border-white/5">
-                <span class="text-white text-sm font-semibold">Single Box ($42)</span>
-                <button onclick="checkout('single-box')" class="border border-amber-500/50 text-amber-400 px-6 py-2 rounded-lg text-xs hover:bg-amber-500/10 transition">SELECT SCENT</button>
+    <!-- Product Details & Fragrance Profiles Section -->
+    <section id="about-scents" class="py-24 px-6 bg-[#0B0D10] border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] gold-gradient font-semibold mb-2">Artisan Craftsmanship</h2>
+                <h3 class="text-3xl md:text-4xl font-serif-custom text-white mb-4">Fragrance Notes & Essential Profiles</h3>
+                <p class="text-gray-400 text-sm max-w-2xl mx-auto">
+                    Hand-rolled on Awaji Island using 100% natural, coreless ingredients. Every stick delivers a pure, unadulterated aromatic experience.
+                </p>
+            </div>
+
+            <!-- Grid of Fragrance Categories -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Collection 1: Zen Woods -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-white/5">
+                    <div class="text-xs gold-gradient font-bold tracking-widest uppercase mb-2">Heritage Collection</div>
+                    <h4 class="text-xl font-serif-custom text-white mb-4">Zen Woods Series</h4>
+                    <div class="space-y-6 text-xs text-gray-300">
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Sandalwood</span>
+                                <span class="text-amber-400">Warm & Creamy</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Deeply grounding, rich woody aroma derived from aged heartwood. Ideal for evening wind-down, reading, and deep contemplation.</p>
+                        </div>
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Agarwood / Kyara</span>
+                                <span class="text-amber-400">Resinous & Sacred</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">The pinnacle of Japanese incense culture. Rare, complex, and slightly spicy notes that elevate the energy of any room instantly.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Hinoki</span>
+                                <span class="text-amber-400">Crisp & Forestic</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Captures the essence of an authentic Japanese Onsen bath. Fresh cypress notes that revitalize the mind and clear mental fatigue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection 2: Ritual & Cleanse -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-white/5">
+                    <div class="text-xs text-emerald-400 font-bold tracking-widest uppercase mb-2">Purification Collection</div>
+                    <h4 class="text-xl font-serif-custom text-white mb-4">Ritual & Cleanse Series</h4>
+                    <div class="space-y-6 text-xs text-gray-300">
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>White Sage</span>
+                                <span class="text-emerald-400">Herbal & Clarifying</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Renowned for atmospheric cleansing. Gently purifies indoor air and neutralizes negative vibes prior to yoga or meditation.</p>
+                        </div>
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Frankincense</span>
+                                <span class="text-emerald-400">Balsamic & Mystical</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">An ancient resin revered for millennia. Smooth, citrus-tinted wooden notes that foster emotional balance and breath awareness.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Patchouli</span>
+                                <span class="text-emerald-400">Earthy & Soothing</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Rich, musky-sweet undertones. Grounding and comforting, perfect for creating a cozy, serene atmosphere on rainy days.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collection 3: Botanical Japan -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-white/5">
+                    <div class="text-xs text-pink-400 font-bold tracking-widest uppercase mb-2">Seasonal Collection</div>
+                    <h4 class="text-xl font-serif-custom text-white mb-4">Botanical Japan Series</h4>
+                    <div class="space-y-6 text-xs text-gray-300">
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Fragrant Olive</span>
+                                <span class="text-pink-400">Sweet & Nectarous</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Evokes the magical autumn breeze in Kyoto. Intensely sweet, honeyed floral fragrance that instantly lifts the spirits.</p>
+                        </div>
+                        <div class="border-b border-white/5 pb-4">
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Sakura</span>
+                                <span class="text-pink-400">Delicate & Elegant</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">A subtle, romantic floral scent reminiscent of soft spring cherry blossoms falling along historic temple pathways.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between font-semibold text-white mb-1">
+                                <span>Green Tea</span>
+                                <span class="text-pink-400">Aromatic & Restorative</span>
+                            </div>
+                            <p class="text-gray-400 leading-relaxed">Infused with the astringent, soothing aroma of roasted Uji tea leaves. Refreshing and ideal for morning focus and work sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-<!-- Footer (All Aligned Right) -->
+    <!-- Single Box Option (Scent Selectable) -->
+    <section id="singles" class="py-16 px-6 bg-[#0F1115]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-serif-custom text-white mb-4">Prefer a Single Fragrance?</h3>
+            <p class="text-gray-400 text-sm mb-8">Select any single box (50 Sticks) for $42. Standard shipping calculated at checkout.</p>
+            
+            <div class="inline-flex flex-col sm:flex-row items-center gap-4 bg-[#14171D] p-6 rounded-xl border border-white/5 max-w-lg mx-auto w-full">
+                <select id="single-scent-select" class="bg-[#0F1115] text-white text-xs border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-500 w-full cursor-pointer">
+                    <option value="" disabled selected>-- Select Your Scent ($42) --</option>
+                    <optgroup label="Zen Woods">
+                        <option value="single-sandalwood">Sandalwood</option>
+                        <option value="single-agarwood">Agarwood</option>
+                        <option value="single-hinoki">Hinoki</option>
+                    </optgroup>
+                    <optgroup label="Ritual & Cleanse">
+                        <option value="single-whitesage">White Sage</option>
+                        <option value="single-frankincense">Frankincense</option>
+                        <option value="single-patchouli">Patchouli</option>
+                    </optgroup>
+                    <optgroup label="Botanical Japan">
+                        <option value="single-osmanthus">Fragrant Olive (Osmanthus)</option>
+                        <option value="single-sakura">Sakura (Cherry Blossom)</option>
+                        <option value="single-greentea">Green Tea</option>
+                    </optgroup>
+                </select>
+                <button onclick="checkoutSingle()" class="w-full sm:w-auto bg-gold-button text-black font-semibold px-8 py-3 rounded-lg text-xs hover:opacity-90 transition whitespace-nowrap">
+                    BUY $42
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (All Aligned Right) -->
     <footer class="py-12 px-6 border-t border-white/5 text-right text-xs text-gray-500 space-y-4 max-w-7xl mx-auto">
         <div class="flex justify-end space-x-6 text-gray-400">
             <button onclick="toggleLegal()" class="hover:text-amber-400 transition flex items-center gap-1 focus:outline-none">
@@ -194,19 +320,47 @@
             }
         }
 
-        // Stripe Checkout Function
+        // Stripe Checkout Function (Trio Bundles)
         function checkout(itemId) {
-            const stripeUrls = {
-                'zen-trio': 'YOUR_STRIPE_URL_ZEN',
-                'cleanse-trio': 'YOUR_STRIPE_URL_CLEANSE',
-                'botanical-trio': 'YOUR_STRIPE_URL_BOTANICAL',
-                'single-box': 'YOUR_STRIPE_URL_SINGLE'
+            const trioUrls = {
+                'zen-trio': 'https://buy.stripe.com/YOUR_ZEN_TRIO_URL',
+                'cleanse-trio': 'https://buy.stripe.com/YOUR_CLEANSE_TRIO_URL',
+                'botanical-trio': 'https://buy.stripe.com/YOUR_BOTANICAL_TRIO_URL'
             };
 
-            if (stripeUrls[itemId] && stripeUrls[itemId].startsWith('http')) {
-                window.location.href = stripeUrls[itemId];
+            if (trioUrls[itemId] && trioUrls[itemId].startsWith('http')) {
+                window.location.href = trioUrls[itemId];
             } else {
-                alert("Redirecting to Secure Checkout for: " + itemId);
+                alert("Redirecting to Checkout for: " + itemId);
+            }
+        }
+
+        // Stripe Checkout Function (Single Boxes)
+        function checkoutSingle() {
+            const selectElement = document.getElementById('single-scent-select');
+            const selectedValue = selectElement.value;
+
+            if (!selectedValue) {
+                alert("Please select a fragrance first.");
+                return;
+            }
+
+            const singleUrls = {
+                'single-sandalwood': 'https://buy.stripe.com/YOUR_SANDALWOOD_URL',
+                'single-agarwood': 'https://buy.stripe.com/YOUR_AGARWOOD_URL',
+                'single-hinoki': 'https://buy.stripe.com/YOUR_HINOKI_URL',
+                'single-whitesage': 'https://buy.stripe.com/YOUR_WHITESAGE_URL',
+                'single-frankincense': 'https://buy.stripe.com/YOUR_FRANKINCENSE_URL',
+                'single-patchouli': 'https://buy.stripe.com/YOUR_PATCHOULI_URL',
+                'single-osmanthus': 'https://buy.stripe.com/YOUR_OSMANTHUS_URL',
+                'single-sakura': 'https://buy.stripe.com/YOUR_SAKURA_URL',
+                'single-greentea': 'https://buy.stripe.com/YOUR_GREENTEA_URL'
+            };
+
+            if (singleUrls[selectedValue] && singleUrls[selectedValue].startsWith('http')) {
+                window.location.href = singleUrls[selectedValue];
+            } else {
+                alert("Redirecting to Checkout for: " + selectedValue);
             }
         }
     </script>
