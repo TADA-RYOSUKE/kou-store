@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOU | Pure Japanese Coreless Incense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0F1115; color: #E5E7EB; }
+        .font-serif-custom { font-family: 'Cinzel', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bg-gold-button { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-black">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-[#0F1115]/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-2xl font-serif-custom tracking-widest text-white font-semibold">KOU</span>
+            <nav class="hidden md:flex space-x-8 text-sm tracking-wider text-gray-400">
+                <a href="#about" class="hover:text-amber-400 transition">HERITAGE</a>
+                <a href="#bundles" class="hover:text-amber-400 transition">TRIO BUNDLES</a>
+                <a href="#singles" class="hover:text-amber-400 transition">SINGLE SKUS</a>
+            </nav>
+            <a href="#bundles" class="bg-gold-button text-black font-semibold px-5 py-2.5 rounded-full text-xs tracking-widest hover:opacity-90 transition transform hover:scale-105">SHOP BUNDLES</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/30 via-[#0F1115] to-[#0F1115]"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <span class="text-xs uppercase tracking-[0.3em] gold-gradient font-semibold mb-4 block">100% Coreless Pure Incense • Awaji Island, Japan</span>
+            <h1 class="text-5xl md:text-7xl font-serif-custom text-white mb-6 leading-tight tracking-wide">Elevate Your Space into Pure Tranquility</h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Experience authentic Japanese incense crafted without a bamboo core. Pure, smokeless, and deeply restorative scent for your daily mindfulness.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#bundles" class="bg-gold-button text-black font-semibold px-8 py-4 rounded-full text-sm tracking-widest hover:opacity-90 transition shadow-lg shadow-amber-500/10">DISCOVER TRIO BUNDLES ($105)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trio Bundles Section -->
+    <section id="bundles" class="py-24 px-6 bg-[#14171D] border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] gold-gradient font-semibold mb-2">Curated Collections</h2>
+                <h3 class="text-3xl md:text-4xl font-serif-custom text-white">The Signature Trio Bundles</h3>
+                <p class="text-gray-400 mt-2">Free Express Global Shipping ($80+ Orders) + Handcrafted Brass Burner Included</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Trio 1: Zen Discovery -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-amber-500/30 flex flex-col justify-between relative">
+                    <div class="absolute -top-3 left-6 bg-amber-500 text-black text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase">BEST SELLER</div>
+                    <div>
+                        <div class="text-4xl mb-4">🪵</div>
+                        <h4 class="text-2xl font-serif-custom text-white mb-2">The Zen Discovery Trio</h4>
+                        <p class="text-amber-400 text-xs tracking-widest uppercase mb-4">Sandalwood • Agarwood • Hinoki</p>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            A timeless journey into traditional Japanese woodcraft. Designed for deep relaxation, focus, and grounding energy.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-8">
+                            <li>✓ 3 Full Boxes (150 Sticks Total)</li>
+                            <li>✓ Free Solid Brass Holder ($25 Value)</li>
+                            <li>✓ Free Express Worldwide Shipping</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline gap-2 mb-6">
+                            <span class="text-3xl font-serif-custom text-white">$105</span>
+                            <span class="text-gray-500 line-through text-xs">$130</span>
+                        </div>
+                        <button onclick="checkout('zen-trio')" class="w-full bg-gold-button text-black font-semibold py-3.5 rounded-xl tracking-widest hover:opacity-90 transition text-xs">
+                            BUY ZEN TRIO
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Trio 2: Ritual & Cleanse -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-white/10 flex flex-col justify-between relative">
+                    <div>
+                        <div class="text-4xl mb-4">🌿</div>
+                        <h4 class="text-2xl font-serif-custom text-white mb-2">The Ritual & Cleanse Trio</h4>
+                        <p class="text-emerald-400 text-xs tracking-widest uppercase mb-4">White Sage • Patchouli • Frankincense</p>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Formulated specifically for yoga, meditation, and space purification. Clears stagnant energy and calms the mind.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-8">
+                            <li>✓ 3 Full Boxes (150 Sticks Total)</li>
+                            <li>✓ Free Solid Brass Holder ($25 Value)</li>
+                            <li>✓ Free Express Worldwide Shipping</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline gap-2 mb-6">
+                            <span class="text-3xl font-serif-custom text-white">$105</span>
+                            <span class="text-gray-500 line-through text-xs">$130</span>
+                        </div>
+                        <button onclick="checkout('cleanse-trio')" class="w-full bg-gold-button text-black font-semibold py-3.5 rounded-xl tracking-widest hover:opacity-90 transition text-xs">
+                            BUY CLEANSE TRIO
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Trio 3: Botanical Japan -->
+                <div class="bg-[#0F1115] p-8 rounded-2xl border border-white/10 flex flex-col justify-between relative">
+                    <div class="absolute -top-3 left-6 bg-pink-500/20 text-pink-300 border border-pink-500/40 text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase">VIRAL TREND</div>
+                    <div>
+                        <div class="text-4xl mb-4">🌸</div>
+                        <h4 class="text-2xl font-serif-custom text-white mb-2">The Botanical Japan Trio</h4>
+                        <p class="text-pink-400 text-xs tracking-widest uppercase mb-4">Fragrant Olive • Sakura • Green Tea</p>
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                            Capture the poetic seasons of Japan. An elegant blend of autumnal Osmanthus, spring Cherry Blossom, and refreshing Matcha.
+                        </p>
+                        <ul class="text-xs text-gray-300 space-y-2 mb-8">
+                            <li>✓ 3 Full Boxes (150 Sticks Total)</li>
+                            <li>✓ Free Solid Brass Holder ($25 Value)</li>
+                            <li>✓ Free Express Worldwide Shipping</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="flex items-baseline gap-2 mb-6">
+                            <span class="text-3xl font-serif-custom text-white">$105</span>
+                            <span class="text-gray-500 line-through text-xs">$130</span>
+                        </div>
+                        <button onclick="checkout('botanical-trio')" class="w-full bg-gold-button text-black font-semibold py-3.5 rounded-xl tracking-widest hover:opacity-90 transition text-xs">
+                            BUY BOTANICAL TRIO
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Box Option -->
+    <section id="singles" class="py-16 px-6 bg-[#0F1115]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-xl font-serif-custom text-white mb-4">Prefer a Single Fragrance?</h3>
+            <p class="text-gray-400 text-sm mb-8">Select any single box (50 Sticks) for $42. Standard shipping calculated at checkout.</p>
+            <div class="inline-flex items-center gap-6 bg-[#14171D] p-4 rounded-xl border border-white/5">
+                <span class="text-white text-sm font-semibold">Single Box ($42)</span>
+                <button onclick="checkout('single-box')" class="border border-amber-500/50 text-amber-400 px-6 py-2 rounded-lg text-xs hover:bg-amber-500/10 transition">SELECT SCENT</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/5 text-center text-xs text-gray-600">
+        <p>&copy; 2026 KOU Incense. All rights reserved. Craftsmanship from Awaji Island, Japan.</p>
+    </footer>
+
+    <script>
+        function checkout(itemId) {
+            alert("Redirecting to Secure Stripe Checkout for: " + itemId);
+        }
+    </script>
+</body>
+</html>
